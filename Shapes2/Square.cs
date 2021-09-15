@@ -10,6 +10,15 @@ namespace Shapes2
     {
         private double side;
 
+        public Square()
+        {
+            this.side = 0;
+        }
+
+        public Square(Square s)
+        {
+            side = s.side;
+        }
         public Square(double side)
         {
             Console.WriteLine(String.Format("I'm initializing a new square instance with a side length of {0}.", side));

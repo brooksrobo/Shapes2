@@ -9,6 +9,16 @@ namespace Shapes2
     class Pentagon
     {
         private double side;
+
+        public Pentagon()
+        {
+            this.side = 0;
+        }
+
+        public Pentagon(Pentagon p)
+        {
+            side = p.side;
+        }
         public Pentagon(double side)
         {
             Console.WriteLine(String.Format("I'm initializing a new pentagon instance with a side length of {0}.", side));

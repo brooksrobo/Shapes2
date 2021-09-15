@@ -11,6 +11,17 @@ namespace Shapes2
         private double minoraxis;
         private double majoraxis;
 
+        public Ellipse()
+        {
+            this.majoraxis = 0;
+            this.minoraxis = 0;
+        }
+
+        public Ellipse(Ellipse e)
+        {
+            majoraxis = e.majoraxis;
+            minoraxis = e.minoraxis;
+        }
         public Ellipse(double minoraxis, double majoraxis)
         {
             Console.WriteLine(String.Format("I'm initializing a new ellipse instance with a minor axis value of {0} and a major axis value of {1}.", minoraxis, majoraxis));

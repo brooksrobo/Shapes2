@@ -12,6 +12,17 @@ namespace Shapes2
         private double width;
         private double height;
 
+        public Rectangle()
+        {
+            this.height = 0;
+            this.width = 0;
+        }
+
+        public Rectangle(Rectangle r)
+        {
+            height = r.height;
+            width = r.width;
+        }
         public Rectangle(double width, double height)
         {
             Console.WriteLine(String.Format("I'm initializing a new rectangle instance with a width value of {0} and a height value of {1}.", width, height));

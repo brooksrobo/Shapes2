@@ -12,6 +12,15 @@ namespace Shapes2
     {
         private double radius;
 
+        public Circle()
+        {
+            this.radius = 0;
+        }
+
+        public Circle(Circle c)
+        {
+            radius = c.radius;
+        }
         public Circle(double radius)
         {
             Console.WriteLine(String.Format("I'm initializing a new Circle instance with a radius value of {0}.", radius));
