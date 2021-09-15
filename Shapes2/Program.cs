@@ -25,6 +25,10 @@ namespace Shapes2
             Console.WriteLine("Area is {0}\n", Eps.CalculateArea());
             Console.WriteLine("Perimeter is {0}\n", Eps.CalculatePerimeter());
 
+            var Pent = new Pentagon(8);
+            Console.WriteLine("Area is {0}\n", Pent.CalculateArea());
+            Console.WriteLine("Perimeter is {0}\n", Pent.CalculatePerimeter());
+
         }
     }
 }
