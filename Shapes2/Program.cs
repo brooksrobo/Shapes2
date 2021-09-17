@@ -8,9 +8,9 @@ namespace Shapes2
         {
             Console.WriteLine("Hello World!");
 
-            var Cone = new Circle(60);
-            Console.WriteLine("Area is {0}\n", Cone.CalculateArea());
-            Console.WriteLine("Perimeter is {0}\n", Cone.CalculatePerimeter());
+            var Circ = new Circle(100);
+            Console.WriteLine("Area is {0}\n", Circ.CalculateArea());
+            Console.WriteLine("Perimeter is {0}\n", Circ.CalculatePerimeter());
 
 
             var Rect = new Rectangle(20, 10);
