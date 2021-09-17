@@ -21,7 +21,7 @@ namespace Shapes2
         }
         public Pentagon(double side)
         {
-            Console.WriteLine(String.Format("I'm initializing a new pentagon instance with a side length of {0}.", side));
+            //Console.WriteLine(String.Format("I'm initializing a new pentagon instance with a side length of {0}.", side));
             this.side = side;
         }
 

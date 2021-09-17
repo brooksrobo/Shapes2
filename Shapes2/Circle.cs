@@ -23,7 +23,7 @@ namespace Shapes2
         }
         public Circle(double radius)
         {
-            Console.WriteLine(String.Format("I'm initializing a new Circle instance with a radius value of {0}.", radius));
+            //Console.WriteLine(String.Format("I'm initializing a new Circle instance with a radius value of {0}.", radius));
             this.radius = radius;
         }
 

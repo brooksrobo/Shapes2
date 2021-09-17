@@ -21,7 +21,7 @@ namespace Shapes2
         }
         public Square(double side)
         {
-            Console.WriteLine(String.Format("I'm initializing a new square instance with a side length of {0}.", side));
+            //Console.WriteLine(String.Format("I'm initializing a new square instance with a side length of {0}.", side));
             this.side = side;
         }
 
