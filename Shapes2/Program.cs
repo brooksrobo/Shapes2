@@ -6,8 +6,6 @@ namespace Shapes2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             var Circ = new Circle(100);
             Console.WriteLine("Circle with radius 100\n");
             Console.WriteLine("Area is {0}\n", Circ.CalculateArea());
