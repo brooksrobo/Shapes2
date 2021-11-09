@@ -9,8 +9,8 @@ namespace Shapes2
 
     class Rectangle : Shape
     {
-        private double width;
-        private double height;
+        private double width { get; set; }
+        private double height { get; set; }
 
         public Rectangle()
         {
@@ -30,14 +30,16 @@ namespace Shapes2
             this.height = height;
         }
 
-        public double CalculateArea()
+        public override double CalculateArea()
         {
-            return this.width * this.height;
+            return height * width;
         }
 
-        public double CalculatePerimeter()
+        public override double CalculatePerimeter()
         {
-            return (2 * this.width) + (2 * this.height);
+            return (2 * height) + (2 * width);
         }
+
+
     }
 }

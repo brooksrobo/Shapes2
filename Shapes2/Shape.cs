@@ -8,14 +8,9 @@ namespace Shapes2
 {
     public abstract class Shape
     {
-        int width;
-        int height;
 
-        public double CalculateArea()
-        {
-            return this.width * this.height;
-        }
-
+        public abstract double CalculateArea();
+        public abstract double CalculatePerimeter();
 
 
     }
