@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes2
 {
-    class Pentagon
+    class Pentagon : Shape
     {
         private double side;
 

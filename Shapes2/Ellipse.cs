@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes2
 {
-    class Ellipse
+    class Ellipse : Shape
     {
         private double minoraxis;
         private double majoraxis;

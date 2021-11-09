@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Shapes2
 {
 
-    class Rectangle
+    class Rectangle : Shape
     {
         private double width;
         private double height;

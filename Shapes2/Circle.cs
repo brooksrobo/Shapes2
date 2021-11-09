@@ -8,7 +8,7 @@ namespace Shapes2
 {
 
 
-    class Circle
+    class Circle : Shape
     {
         private double radius;
 
