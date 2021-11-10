@@ -23,6 +23,7 @@ namespace Shapes2
             height = r.height;
             width = r.width;
         }
+   
         public Rectangle(double width, double height)
         {
            // Console.WriteLine(String.Format("I'm initializing a new rectangle instance with a width value of {0} and a height value of {1}.", width, height));
@@ -38,6 +39,92 @@ namespace Shapes2
         public override double CalculatePerimeter()
         {
             return (2 * height) + (2 * width);
+        }
+
+        public static Rectangle operator >(Rectangle r, Rectangle t)
+        {
+            double temp1 = r.width * r.height;
+            double temp2 = t.width * t.height;
+
+            if (temp1 > temp2)
+            {
+                return r;
+            }
+            else
+            {
+                return t;
+            }
+        }
+        public static Rectangle operator <(Rectangle r, Rectangle t)
+        {
+            double temp1 = r.width * r.height;
+            double temp2 = t.width * t.height;
+
+            if (temp1 < temp2)
+            {
+                return r;
+            }
+            else
+            {
+                return t;
+            }
+        }
+
+        public override bool Equals(object obj)
+        {
+
+            if (((Rectangle)obj).width == this.width && ((Rectangle)obj).height == this.height)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public override int GetHashCode()
+        {
+            return this.ToString().GetHashCode();
+        }
+
+        public static bool operator == (Rectangle r, Rectangle t)
+        {
+            return r.Equals(t);
+        }
+        public static bool operator != (Rectangle r, Rectangle t)
+        {
+            return ! r.Equals(t);
+        }
+
+        public static Rectangle operator >= (Rectangle r, Rectangle t)
+        {
+            double temp1 = r.width * r.height;
+            double temp2 = t.width * t.height;
+
+            if (temp1 >= temp2)
+            {
+                return r;
+            }
+            else
+            {
+                return t;
+            }
+        }
+
+        public static Rectangle operator <= (Rectangle r, Rectangle t)
+        {
+            double temp1 = r.width * r.height;
+            double temp2 = t.width * t.height;
+
+            if (temp1 <= temp2)
+            {
+                return r;
+            }
+            else
+            {
+                return t;
+            }
         }
 
 
