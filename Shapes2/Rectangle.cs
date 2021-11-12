@@ -36,7 +36,7 @@ namespace Shapes2
             return height * width;
         }
 
-        public double CalculatePerimeter(double height, double width)
+        public static double CalculatePerimeter(double height, double width)
         {
             return (2 * height) + (2 * width);
         }
