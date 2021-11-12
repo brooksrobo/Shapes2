@@ -31,14 +31,19 @@ namespace Shapes2
             this.height = height;
         }
 
-        public override double CalculateArea()
+        public double CalculateArea()
         {
             return height * width;
         }
 
-        public override double CalculatePerimeter()
+        public double CalculatePerimeter(double height, double width)
         {
             return (2 * height) + (2 * width);
+        }
+
+        private double CalculatePerimeter()
+        {
+            return (this.height * 2) + (this.width * 2);
         }
 
         public static Rectangle operator >(Rectangle r, Rectangle t)
