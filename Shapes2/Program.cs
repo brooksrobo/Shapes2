@@ -16,6 +16,7 @@ namespace Shapes2
             Console.WriteLine("Rectangle with sides of 20 and 10\n");
             Console.WriteLine("Area is {0}\n", Rect.CalculateArea());
             Console.WriteLine("Perimeter is {0}\n", Rect.CalculatePerimeter());
+            
 
             var Sq = new Square(4);
             Console.WriteLine("Square with sides of 4\n");

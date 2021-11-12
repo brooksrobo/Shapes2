@@ -12,6 +12,7 @@ namespace Shapes2
         private double width { get; set; }
         private double height { get; set; }
 
+        private double perimeter;
         public Rectangle()
         {
             this.height = 0;
@@ -35,15 +36,19 @@ namespace Shapes2
         {
             return height * width;
         }
-
-        public static double CalculatePerimeter(double height, double width)
+        public double CalculatePerimeter()
         {
-            return (2 * height) + (2 * width);
+            return (height * 2) + (width * 2);
+        }
+        public static double CalculatePerimeter(double h, double w)
+        {
+            return (2 * h) + (2 * w);
         }
 
-        private double CalculatePerimeter()
+        private double CalculatePerimeter(double width)
         {
-            return (this.height * 2) + (this.width * 2);
+            perimeter = width * 2;
+            return perimeter;
         }
 
         public static Rectangle operator >(Rectangle r, Rectangle t)
